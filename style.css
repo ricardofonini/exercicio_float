@@ -1,0 +1,52 @@
+html {
+    box-sizing: border-box;
+}
+
+*, **::after {
+    box-sizing: inherit;
+}
+
+.row::after {
+content: '';
+display: table;
+clear: both;
+}
+
+.body {
+    font-size: arial;
+}
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    float: none;
+    background-color: darkblue;
+    width: 98%;
+
+}
+.main-title {
+    font-size: 3em;
+    text-align: justify;
+}
+
+div img {
+    width: 100%;
+}
+
+.col-4{
+    background-color: cadetblue;
+    padding: auto;
+}
+
+
+
+
+@media screen and (min-widht: 480px) {
+    div img {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .col-1-2 {
+        width: 20%;
+    }
+}
